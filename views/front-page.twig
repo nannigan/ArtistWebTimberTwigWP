@@ -1,0 +1,22 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="content-wrapper">
+		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+			<section class="article-content">
+
+				<div class="article-body">
+
+<p>{{post.homecopy}}</p>
+
+                   {% set home_img = TimberImage(post.home_photo) %}
+                    <img src="{{home_img.src}}" alt="{{home_img.title}}">
+
+
+
+
+				</div>
+			</section>
+		</article>
+	</div><!-- /content-wrapper -->
+{% endblock %}

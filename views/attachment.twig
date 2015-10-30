@@ -1,0 +1,21 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="content-wrapper">
+		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+			<section class="article-content">
+
+               {#  attachment page
+                {{dump(post.prev.link)}} #}
+
+               {#  <pre>{{dump(post.guid)}}</pre> #}
+                <img src="{{post.guid}}">
+                 <h3 class="article-title">{{post.title}}</h3>
+                <p>{{post.dimensions}}</p>
+
+
+			</section>
+
+		</article>
+	</div><!-- /content-wrapper -->
+{% endblock %}

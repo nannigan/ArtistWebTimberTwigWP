@@ -1,0 +1,16 @@
+<article class="tease tease-{{post.post_type}}" id="tease-{{post.ID}}">
+	{% block content %}
+		<h2>o dear we don't know what we are looking for.<a href="{{post.link}}">{{post.title}}</a></h2>
+		<p>{{post.get_preview}}</p>
+		{% if post.get_thumbnail %}
+			<img src="{{post.thumbnail.src}}" />
+		{% endif %}
+	{% endblock %}
+</article>
+
+{# {% for cat in post.get_terms('category') %}
+            <a href="{{cat.link}}">{{cat.name}}</a>
+
+            the link attribute of the category object
+            theoretically should be able to see in dump
+        {% endfor %} #}

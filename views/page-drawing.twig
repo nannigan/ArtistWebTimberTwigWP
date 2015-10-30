@@ -1,0 +1,38 @@
+{% extends "base.twig" %}
+{% block content %}
+    <div class="content-wrapper container">
+        <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+            <section class="article-content">
+                <div class='row'>
+                    <div class="article-body">
+                        {# http://flickity.metafizzy.co/#getting-started  see page-gallery#}
+                        <h4>Fragments</h4>
+                        {% for i in post.gallery_drawing %}
+                            {% set img = TimberImage(i) %}
+                            {#   <div id='myModal' class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <img src="{{img.src('large')}}" alt="{{img.title}}">
+                                        <p>{{img.title}}</p>
+                                    </div>
+                                </div>
+                            </div> #}
+
+
+
+                            <div class="col-md-3 col-xs-6">
+                                {# <button type="button" data-toggle="modal" data-target="#myModal">Launch modal</button> #}
+                                <a href="{{img.link}}">
+                                    <img src="{{img.src('medium')}}" alt="{{img.title}}"></a>
+                                {#  <h5>{{img.title}}</h5> #}
+                            <pre>{{dump(img.link)}}</pre>
+                            <p class='small'>{{img.caption}}</p>
+                           </div>
+
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    </article>
+    </div><!-- /content-wrapper -->
+{% endblock %}

@@ -1,0 +1,61 @@
+
+// ---
+// Nav
+// ---
+// I like this toggle menu a lot: https://codepen.io/bradfrost/pen/sHvaz
+
+// Base nav styles here.
+
+.nav {
+	list-style-type: none;
+	padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+
+}
+.nav-item{
+    text-align:center;
+    width: 100px;
+    padding:.5rem;
+    flex: 1;
+}
+
+#contain-head {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: baseline;
+    @include bp(md) {
+        background: green;
+        flex-direction: column;
+    }
+}
+.hdr-logo{
+    flex: 1;
+}
+
+.main-nav{
+    flex: 2;
+
+}
+
+
+///TODO make break point for vertical display where nav will have flex-direction column as will contain-head (parent of nav and logo header)
+
+	// // A breakpoint for the larger screens
+	// @include bp(md) {
+
+	// 	li {
+	// 		display: inline-block;
+	// 		padding-right: $h4;
+
+	// 		&:last-child {
+	// 			padding-right: 0;
+	// 		}
+	// 	}
+
+
+
+

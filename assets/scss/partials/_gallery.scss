@@ -1,0 +1,46 @@
+
+// ---
+// my styles for Flikity galleries
+
+//webdesign.tutsplus.com/tutorials/building-a-slider-with-metafizzys-flickity--cms-24307
+// SIMPLE INIT just include js-flickity on gallery parent
+// ---
+
+
+.gallery-flickity {
+    height: 600px;
+    width: 100%;
+    //background: #e45772;
+}
+
+.gallery-cell {
+     width: 20%;
+    height: 100%;
+    margin-right: 2px;
+
+}
+
+
+
+
+img .gallery-cell-image {
+  display: block;
+  border: 3px solid #e42e32;
+  max-height: 100%;
+  margin: 0 auto;
+  max-width: none;
+  // opacity: 0;
+  // -webkit-transition: opacity 0.45s;
+  //         transition: opacity 0.45s;
+}
+
+/* fade in lazy loaded image */
+.gallery-cell-image.flickity-lazyloaded,
+.gallery-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
+
+
+.flickity-page-dots {
+  bottom: -3rem;
+}

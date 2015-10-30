@@ -1,0 +1,59 @@
+{
+    "key": "group_561b2811ce8b9",
+    "title": "gallery drawing",
+    "fields": [
+        {
+            "key": "field_561b282a03f25",
+            "label": "Drawing Gallery",
+            "name": "gallery_drawing",
+            "type": "gallery",
+            "instructions": "Gallery for drawing medium",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": "gallery_drawing"
+            },
+            "min": 3,
+            "max": 12,
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ".jpg , .jpeg, .png"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "2"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "author",
+        "featured_image",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1445284655
+}
