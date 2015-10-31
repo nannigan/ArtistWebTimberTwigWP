@@ -14,7 +14,7 @@
 //--
 
 @import "vendor/bootstrap/bootstrap";
-@import "vendor/flickity";
+
 
 
 //--
@@ -23,6 +23,10 @@
 //--
 
 @import "utility/variables";
+
+/// made changes using variable colors
+@import "vendor/flickity";
+
 @import "utility/mixins";
 @import "utility/helpers";
 

@@ -32,10 +32,12 @@ $screen-lg: 		60em;
 // http://adobe.ly/1wwZ0Rk
 
 $dark-blue: 		#334D5C;
+$dark-grass-green:  #4e5f1e;
 $teal: 				#45B29D;
 $yellow: 			#EFC94C;
 $orange: 			#E27A3F;
 $red: 				#DF4949;
+$dark-red:          #711b12;
 
 // In art school I was told never to make white pure white and black pure black - not sure if that holds up for the world wide web, but maybe!
 $white: #fdfefe;
@@ -79,13 +81,13 @@ $link-active: 		darken($link-color, 60%);
 
 
 $base:  			1.1rem;
-$sml:  				$base*0.8;
+$sml:  				$base*0.7;
 
-$h1:  				$base*2.6;
-$h2:  				$base*2.2;
-$h3:  				$base*1.8;
-$h4:  				$base*1.4;
-$h5:  				$base*1.2;
+$h1:  				$base*2.0;
+$h2:  				$base*1.7;
+$h3:  				$base*1.45;
+$h4:  				$base*1.23;
+$h5:  				$base*1.05;
 $h6:  				$sml;
 
 

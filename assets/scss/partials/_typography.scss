@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: $line-height-base;
 	font-family: $heading-font;
 	margin-bottom: 0;
-    @include upperspace();
+    @include upperAndspace();
 }
 
 h1 {
