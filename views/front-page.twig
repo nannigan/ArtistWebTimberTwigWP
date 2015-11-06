@@ -1,22 +1,29 @@
 {% extends "base.twig" %}
-
 {% block content %}
-	<div class="content-wrapper">
-		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-			<section class="article-content">
 
-				<div class="article-body">
+    <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
 
-<p>{{post.homecopy}}</p>
+        <div class='row'>
+            <div class='col-md-5'>
+                <div class='poem'>
+                    <h3>{{post.poem_title}}</h3>
+                <pre>{{post.homecopy}}</pre>
+                <p class='credit'>{{post.poem_attribution}}<br>{{ post.poem__attribution_two }}</p>
+            </div>
+        </div>
+        <div class='col-md-7'>
 
-                   {% set home_img = TimberImage(post.home_photo) %}
-                    <img src="{{home_img.src}}" alt="{{home_img.title}}">
+            <div class='home-image'>
+                <h3>{{post.home_photo_title}}<span class='caption'>{{post.image_caption}}</span></h3>
+                {% set home_img = TimberImage(post.home_photo) %}
+                <img class="portfolio-image" src="{{home_img.src|resize(500)}}" alt="{{home_img.title}}">
+                <p class='credit'>{{post.photo_credit}}</p>
 
+            </div>
+        </div>
 
+    </div>
 
+</article>
 
-				</div>
-			</section>
-		</article>
-	</div><!-- /content-wrapper -->
 {% endblock %}

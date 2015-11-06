@@ -9,9 +9,10 @@
                 {{dump(post.prev.link)}} #}
 
                {#  <pre>{{dump(post.guid)}}</pre> #}
-                <img src="{{post.guid}}">
-                 <h3 class="article-title">{{post.title}}</h3>
-                <p>{{post.dimensions}}</p>
+                <img class="portfolio-image" src="{{post.guid}}">
+                {# class="article-title" #}
+                 <h3>{{ post.title }}  </h3><p class='caption'>{{ post.caption }}</p>
+
 
 
 			</section>

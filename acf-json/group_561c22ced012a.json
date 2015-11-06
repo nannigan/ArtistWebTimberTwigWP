@@ -1,0 +1,204 @@
+{
+    "key": "group_561c22ced012a",
+    "title": "home fields",
+    "fields": [
+        {
+            "key": "field_561c22e3c7293",
+            "label": "Image for home page",
+            "name": "home_photo",
+            "type": "image",
+            "instructions": "image to be displayed on home page",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_561c498f64aef",
+            "label": "Image title",
+            "name": "home_photo_title",
+            "type": "text",
+            "instructions": "enter the title of the portfolio item on the home page",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "'Untitled",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_563beabf54661",
+            "label": "Image Details Caption",
+            "name": "image_caption",
+            "type": "text",
+            "instructions": "Enter media and dimensions for image",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "media, size in inches",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_563943e22e767",
+            "label": "Poem Title",
+            "name": "poem_title",
+            "type": "text",
+            "instructions": "Enter the title of the poem ",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Untitled",
+            "placeholder": "Poem title here",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_562151b3f8a21",
+            "label": "Poem",
+            "name": "homecopy",
+            "type": "textarea",
+            "instructions": "Use this to add the poem on the home page.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": "homecopy"
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 62,
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56394689e37e0",
+            "label": "Poem Attribution",
+            "name": "poem_attribution",
+            "type": "text",
+            "instructions": "Enter poem author and\/or translator here.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Anonymous",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_563beb4a54662",
+            "label": "Poem  Attribution Two",
+            "name": "poem__attribution_two",
+            "type": "text",
+            "instructions": "Use for translator or other needed second line of attribution",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_563bed5c19f45",
+            "label": "Photo Credit",
+            "name": "photo_credit",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Photo: Pete Macchia",
+            "placeholder": "Photo: Pete Macchia",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "custom_fields",
+        "revisions",
+        "slug",
+        "page_attributes",
+        "featured_image",
+        "categories"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1446775566
+}

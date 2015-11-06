@@ -61,7 +61,7 @@ $MQs: true;
 // Mainly a timesaver.
 
 @mixin upperAndspace() {
-	letter-spacing: .5rem;
+	letter-spacing: .2rem;
 	text-transform: uppercase;
 }
 
@@ -77,4 +77,10 @@ $MQs: true;
     &:after {
 	   clear: both;
     }
+}
+
+@mixin unstyle-list(){
+    list-style-type: none;
+    padding-left: 0;
+
 }

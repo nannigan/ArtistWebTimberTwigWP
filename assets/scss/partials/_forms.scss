@@ -48,11 +48,11 @@ input[type="url"],
 input[type="search"],
 input[type="tel"] {
 
-	width: 100%;	
+	width: 100%;
 	border: $accent-border;
 
 	&:focus {
-		border-color: $accent-med;
+		border-color: $color-accent-med;
 	}
 }
 
@@ -73,7 +73,7 @@ input[type="checkbox"] {
 
 input[type="submit"],
 button {
-	
+
 }
 
 select:focus,

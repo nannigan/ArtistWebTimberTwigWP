@@ -6,20 +6,12 @@
 
 // Base nav styles here.
 
-.nav {
-	list-style-type: none;
-	padding-left: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
 
-}
-.nav-item{
-    text-align:center;
-    width: 100px;
-    padding:.5rem;
-    flex: 1;
-}
+// .nav-item{
+//     text-align:center;
+//     width: 100px;
+//     padding:.5rem;
+// }
 
 #contain-head {
     display: flex;
@@ -32,14 +24,157 @@
         flex-direction: column;
     }
 }
-.hdr-logo{
+.site-title{
     flex: 1;
+    margin-left: 9rem;
 }
 
-.main-nav{
+.nav-main{
     flex: 2;
+    //width:900px;
+   //border: 2px solid #b53157;
+     margin-left: 10rem;
+   // padding-left: 33%;
+   //margin-left: 25%
 
 }
+
+
+
+.nav {
+     @include unstyle-list();
+     //display: block;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+
+}
+
+
+
+.nav-item{
+    font-family: $serif;
+    font-size: $size-h4;
+    letter-spacing: .2rem;
+    padding-right: $size-h1;
+}
+
+.nav-items {
+    @include unstyle-list;
+    transition: 0.5s ease all;
+
+    @include bp(med) {
+        // Make nav horizontal
+        & > li{
+            display: inline-block;
+        }
+    }
+
+}
+
+
+
+////////////lara's dropdown from demo
+
+// .nav-main {
+
+//     // Mobile nav styles
+//     max-height: 0;
+//     overflow: hidden;
+//     transition: all 0.75s ease;
+//     margin-top: $size-h2;
+
+//     // Open nav styles
+//     &.active {
+//         background-color: purple;
+//         max-height: $screen-md;
+//         overflow: visible;
+//     }
+
+//     // Larger screens layout
+//     @include bp(md) {
+//         overflow: visible;
+//         max-height: none;
+//     }
+// }
+
+////////////////copied into mine above
+// .nav-items {
+//     @include unstyle-list;
+//     transition: 0.5s ease all;
+
+//     @include bp(md) {
+//         // Make nav horizontal
+//         & > li {
+//             display: inline-block;
+//         }
+//        }
+
+// }
+/////////////////////////////////////
+// .nav-item-link,
+// .nav-drop-link {
+//     @include upperAndspace;
+//     padding: $size-h4;
+//     display: block;
+
+//     &:hover {
+//         background-color: $color-accent-light;
+//         color: $color-accent-med;
+//     }
+// }
+
+
+// // Link to open the nav
+
+// .nav-open-link {
+
+//     @include bp(md) {
+//         display: none;
+//     }
+
+//     &.active {
+//         background-color: blue;
+//     }
+// }
+
+// // Dropdown Nav
+
+// .nav-drop {
+
+//     // Hide the dropdown
+//     max-height: 0;
+//     overflow: hidden;
+//     @include unstyle-list;
+//     width: 100%;
+
+//     @include bp(md) {
+//         // Dropdown goes below parent item
+//         text-align: left;
+//         position: absolute;
+//         z-index: $z-top;
+//     }
+// }
+
+// .nav-drop-item {
+//     background-color: $color-accent-med;
+// }
+
+// .menu-item-has-children {
+//     position: relative;
+// }
+
+// .menu-item-has-children:hover
+// .nav-drop {
+//     max-height: 32em;
+//     overflow: visible;
+// }
+
+
+
+
+
 
 
 ///TODO make break point for vertical display where nav will have flex-direction column as will contain-head (parent of nav and logo header)

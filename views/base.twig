@@ -15,7 +15,7 @@
 
 		<section id="content" role="main" class="content-wrapper">
 			{% if title %}<h3>{{title}}</h3>{% endif %}
-			<div class="container contain {{sidebar_class}}">
+			<div class="container  {{sidebar_class}}">
 				{% block content %}
 					Sorry, no hellloooow today!
 				{% endblock %}
@@ -28,8 +28,8 @@
 		</section>
 
 		{% block footer %}
-			<footer id="footer" class="container">
-				<div class="contain row">
+			<footer class="container">
+				<div class="row footer">
 					{% include 'includes/footer.twig' %}
 				</div>
 			</footer>

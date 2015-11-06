@@ -14,21 +14,23 @@
 
 * {
 	 box-sizing: border-box;
+
 }
 
 // ---
 // General Selectors
 // ---
 
-img {
-	max-width: 100%;
-}
+
+
 
 
 // ---
 // Header
 // ---
-
+#contain-head{
+    border-bottom: 1px solid $link-color;
+}
 // You might want to split these into your own partials!
 
 
@@ -37,7 +39,16 @@ img {
 // ---
 // Main Site Content
 // ---
+//from responsive design aquent
+html {
+   height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+
 body {
+    min-height: 100%;
     background: $white;
     height: 100%;
     padding: 0;
@@ -54,14 +65,23 @@ body {
 // ---
 // Media
 // ---
-
-
+img {
+    max-width: 100%;
+    &.portfolio-image{
+    border: 1px solid $black;
+   }
+}
 
 
 // ---
 // Footer
 // ---
-
-
+footer{
+    border-top: 1px solid $link-color;
+    & > .footer{
+        margin: $size-h1 auto;
+        font-size: $size-h4;
+      }
+}
 
 

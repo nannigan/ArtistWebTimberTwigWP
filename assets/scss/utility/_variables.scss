@@ -43,15 +43,22 @@ $dark-red:          #711b12;
 $white: #fdfefe;
 $black: #1F232A;
 
+// greenish
+$grey-dark: #4a5656;
+$grey-light: lighten($grey-dark, 20%);
+$grey-med: lighten($grey-dark, 10%);
+
+
+
 
 // STOP!!! READ THIS:
 // Semantic Color Names
 // http://thesassway.com/beginner/variable-naming
 
 // These are nice utility colors
-$accent-light: 		$yellow;
-$accent-med: 		$teal;
-$accent-dark:		$dark-blue;
+$color-accent-light: 		$yellow;
+$color-accent-med: 		$grey-light;
+$color-accent-dark:		$dark-blue;
 
 $text-light: 		$white;
 $text-dark: 		$black;
@@ -62,7 +69,7 @@ $notice-danger:		$red;
 $notice-warning:	$orange;
 
 // Then element-based names are nice too
-$link-color: 		$accent-med;
+$link-color: 		$color-accent-med;
 $link-hover: 		darken($link-color, 20%);
 $link-active: 		darken($link-color, 60%);
 
@@ -80,15 +87,15 @@ $link-active: 		darken($link-color, 60%);
 // And a small pen I made that explains them: http://codepen.io/laras126/pen/YyWLgz
 
 
-$base:  			1.1rem;
-$sml:  				$base*0.7;
+$size-base:  			1.1rem;
+$size-sml:  				$size-base*0.6;
 
-$h1:  				$base*2.0;
-$h2:  				$base*1.7;
-$h3:  				$base*1.45;
-$h4:  				$base*1.23;
-$h5:  				$base*1.05;
-$h6:  				$sml;
+$size-h1:  				$size-base*2.0;
+$size-h2:  				$size-base*1.7;
+$size-h3:  				$size-base*1.45;
+$size-h4:  				$size-base*1.23;
+$size-h5:  				$size-base*1.05;
+$size-h6:  				$size-base*0.95;
 
 
 
@@ -128,9 +135,16 @@ $body-font: 		$serif;
 
 // Shortcuts for things you might be typing a lot.
 
-$accent-border: 1px dotted $accent-med;
+$accent-border: 1px dotted $color-accent-med;
 
 // The most commonly rotated color:
 $rotate-text: 	$text-light;
-$rotate-bkgd: 	$accent-med;
-$rotate-link: 	$accent-light;
+$rotate-bkgd: 	$color-accent-med;
+$rotate-link: 	$color-accent-light;
+
+
+// z-indices
+
+$z-top: 3;
+$z-mid: 2;
+$z-bot: 0;
