@@ -153,14 +153,19 @@
     display: block;
 }
 
-.menu-item-has-children {
+.nav-item{
     position: relative;
+    &:hover{
+        .nav-drop{
+          max-height: 62em;
+          overflow: visible;
+        }
+    }
 }
 
 
 .nav-drop:hover {
     max-height: 62em;
-
     overflow: visible;
     //border: 1px solid #a034c0; //purple
 }

@@ -1251,8 +1251,11 @@ input[type="checkbox"] {
   background-color: #fdfefe;
   display: block; }
 
-.menu-item-has-children {
+.nav-item {
   position: relative; }
+  .nav-item:hover .nav-drop {
+    max-height: 62em;
+    overflow: visible; }
 
 .nav-drop:hover {
   max-height: 62em;
