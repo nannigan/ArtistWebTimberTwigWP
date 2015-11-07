@@ -45,9 +45,9 @@
      @include unstyle-list();
      //display: block;
 
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: baseline;
 
 }
 
@@ -63,12 +63,14 @@
 .nav-items {
     @include unstyle-list;
     transition: 0.5s ease all;
+    //border: 2px solid #c05d05;//ora
 
     @include bp(med) {
         // Make nav horizontal
-        & > li{
+        & > .nav-item{
             display: inline-block;
         }
+
     }
 
 }
@@ -99,36 +101,25 @@
 //     }
 // }
 
-////////////////copied into mine above
-// .nav-items {
-//     @include unstyle-list;
-//     transition: 0.5s ease all;
 
-//     @include bp(md) {
-//         // Make nav horizontal
-//         & > li {
-//             display: inline-block;
-//         }
-//        }
+.nav-item-link,
+.nav-drop-link {
+    //@include upperAndspace;
+    //border: 2px solid #b11c6c;//pink
+    padding: $size-h6;
+    display: block;
 
-// }
-/////////////////////////////////////
-// .nav-item-link,
-// .nav-drop-link {
-//     @include upperAndspace;
-//     padding: $size-h4;
-//     display: block;
-
-//     &:hover {
-//         background-color: $color-accent-light;
-//         color: $color-accent-med;
-//     }
-// }
+    &:hover {
+        background-color: $color-accent-light;
+        color: $color-accent-med;
+    }
+}
 
 
-// // Link to open the nav
+// Link to open the nav
 
 // .nav-open-link {
+//     border: solid 2px #1ab141;//green
 
 //     @include bp(md) {
 //         display: none;
@@ -141,35 +132,38 @@
 
 // // Dropdown Nav
 
-// .nav-drop {
+.nav-drop {
+ //border: 2px solid #3988c0; //blue
+    // Hide the dropdown
+    max-height: 1px;
+    overflow: hidden;
+    @include unstyle-list;
+    //width: 100%;
 
-//     // Hide the dropdown
-//     max-height: 0;
-//     overflow: hidden;
-//     @include unstyle-list;
-//     width: 100%;
+    // @include bp(md) {
+        // Dropdown goes below parent item
+        text-align: left;
+        position: absolute;
+        z-index: $z-top;
+    // }
+}
 
-//     @include bp(md) {
-//         // Dropdown goes below parent item
-//         text-align: left;
-//         position: absolute;
-//         z-index: $z-top;
-//     }
-// }
+.nav-drop-item {
+    background-color: $white;
+    display: block;
+}
 
-// .nav-drop-item {
-//     background-color: $color-accent-med;
-// }
+.menu-item-has-children {
+    position: relative;
+}
 
-// .menu-item-has-children {
-//     position: relative;
-// }
 
-// .menu-item-has-children:hover
-// .nav-drop {
-//     max-height: 32em;
-//     overflow: visible;
-// }
+.nav-drop:hover {
+    max-height: 62em;
+
+    overflow: visible;
+    //border: 1px solid #a034c0; //purple
+}
 
 
 

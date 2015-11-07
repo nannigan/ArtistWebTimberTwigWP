@@ -11,6 +11,7 @@ $(document).ready( function() {
         $nav_link.toggleClass('active');
         return false;
     });
+});
 
 
 /*!

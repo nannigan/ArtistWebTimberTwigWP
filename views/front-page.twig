@@ -14,7 +14,7 @@
         <div class='col-md-7'>
 
             <div class='home-image'>
-                <h3>{{post.home_photo_title}}<span class='caption'>{{post.image_caption}}</span></h3>
+                <h3>{{post.home_photo_title}} &nbsp;<span class='caption caption-home'> {{post.image_caption}}</span></h3>
                 {% set home_img = TimberImage(post.home_photo) %}
                 <img class="portfolio-image" src="{{home_img.src|resize(500)}}" alt="{{home_img.title}}">
                 <p class='credit'>{{post.photo_credit}}</p>

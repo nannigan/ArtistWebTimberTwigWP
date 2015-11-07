@@ -5,18 +5,17 @@
 		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
 			<section class="article-content">
 
-               {#  attachment page
-                {{dump(post.prev.link)}} #}
 
-               {#  <pre>{{dump(post.guid)}}</pre> #}
+
+
                 <img class="portfolio-image" src="{{post.guid}}">
-                {# class="article-title" #}
-                 <h3>{{ post.title }}  </h3><p class='caption'>{{ post.caption }}</p>
+
+                 <h3>{{ post.title }}  </h3><p class='caption'>{{ post.dimensions }}</p>
 
 
 
 			</section>
 
 		</article>
-	</div><!-- /content-wrapper -->
+	</div>
 {% endblock %}

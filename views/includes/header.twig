@@ -4,10 +4,16 @@
                         <a class="site-title-link" href="{{site.link}}" rel="home">{{site.name}}</a>
 
                      {% if (post.title == 'Drawing') or (post.title == 'Painting') or (post.title == 'Mixed+Media') %}
-                        <span class='site-title-sub'>{{post.title|lower}}</span>
-
+                          <span class='site-title-sub'>{{post.title|lower}}</span>
+                        {% elseif ('drawing' in post.title)%}
+                          <span class='site-title-sub'>{{ 'drawing'|lower }}</span>
+                        {% elseif ('painting' in post.title)%}
+                          <span class='site-title-sub'>{{ 'painting'|lower }}</span>
+                        {% elseif ('mixed' in post.title)%}
+                          <span class='site-title-sub'>{{ 'mixed+media'|lower }}</span>
                     {% endif %}
                     </h2>
+
 
                   {% include 'includes/nav.twig' %}
 

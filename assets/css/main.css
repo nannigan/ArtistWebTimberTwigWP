@@ -1213,16 +1213,7 @@ input[type="checkbox"] {
 
 .nav {
   list-style-type: none;
-  padding-left: 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-align-items: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline; }
+  padding-left: 0; }
 
 .nav-item {
   font-family: "Alegreya", serif;
@@ -1235,8 +1226,37 @@ input[type="checkbox"] {
   padding-left: 0;
   transition: 0.5s ease all; }
   @media (min-width: 48em) {
-    .nav-items > li {
+    .nav-items > .nav-item {
       display: inline-block; } }
+
+.nav-item-link,
+.nav-drop-link {
+  padding: 1.045rem;
+  display: block; }
+  .nav-item-link:hover,
+  .nav-drop-link:hover {
+    background-color: #EFC94C;
+    color: #7a8c8c; }
+
+.nav-drop {
+  max-height: 1px;
+  overflow: hidden;
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+  position: absolute;
+  z-index: 3; }
+
+.nav-drop-item {
+  background-color: #fdfefe;
+  display: block; }
+
+.menu-item-has-children {
+  position: relative; }
+
+.nav-drop:hover {
+  max-height: 62em;
+  overflow: visible; }
 
 * {
   box-sizing: border-box; }
