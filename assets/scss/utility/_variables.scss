@@ -44,7 +44,7 @@ $white: #fdfefe;
 $black: #1F232A;
 
 // greenish
-$grey-dark: #4a5656;
+$grey-dark: #4f5654;
 $grey-light: lighten($grey-dark, 20%);
 $grey-med: lighten($grey-dark, 10%);
 
@@ -106,7 +106,7 @@ $size-h6:  				$size-base*0.95;
 // Pretty standard.
 
 $sans-serif: 		'Alegreya Sans SC', sans-serif;
-$serif:             'Alegreya', serif;
+$serif:             'Droid Serif', serif;
 
 // If you are using webfonts and are a good girl/boy, you will define some fallbacks (see the top of _typography.scss for where to use them):
 

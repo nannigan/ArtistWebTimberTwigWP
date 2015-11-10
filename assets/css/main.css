@@ -1044,23 +1044,44 @@ http://flickity.metafizzy.co
 .flickity-page-dots {
   top: -2.2rem; }
 
+.flex-gallery {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.poem-box {
+  flex-order: 1; }
+
+.image-box {
+  flex-order: 2;
+  width: 250px; }
+
 body {
-  font-family: "Alegreya", serif;
-  font-size: 100%;
+  font-family: "Droid Serif", serif;
+  font-size: 16px;
   line-height: 1;
   color: #1F232A; }
 
 a,
 a:visited,
 a:link {
-  color: #7a8c8c;
+  color: #808b88;
   text-decoration: none; }
   a:hover,
   a:focus,
   a:visited:hover,
   a:visited:focus,
   a:link:hover, a:link:focus {
-    color: #4a5656; }
+    color: #4f5654; }
   a:active,
   a:visited:active,
   a:link:active {
@@ -1105,25 +1126,23 @@ small {
   font-size: 0.66rem; }
 
 .site-title-sub {
-  font-size: 1.595rem;
-  color: #627171; }
+  font-size: 1.353rem;
+  color: #67716e;
+  letter-spacing: .4rem; }
 
 a.site-title-link {
   color: #1F232A; }
 
-.caption {
-  color: #627171;
-  font-family: "Alegreya", serif;
+.credit, .caption {
+  color: #67716e;
+  font-family: "Droid Serif", serif;
   font-style: italic;
-  font-size: 1.353rem;
+  font-size: 1.155rem; }
+
+.caption {
+  line-height: 1.2;
   text-transform: lowercase;
   letter-spacing: .1em; }
-
-.credit {
-  color: #627171;
-  font-family: "Alegreya", serif;
-  font-style: italic;
-  font-size: 1.353rem; }
 
 .btn--default {
   background-color: #334D5C;
@@ -1162,7 +1181,7 @@ input[type="url"],
 input[type="search"],
 input[type="tel"] {
   width: 100%;
-  border: 1px dotted #7a8c8c; }
+  border: 1px dotted #808b88; }
   textarea:focus,
   input[type="text"]:focus,
   input[type="password"]:focus,
@@ -1177,7 +1196,7 @@ input[type="tel"] {
   input[type="url"]:focus,
   input[type="search"]:focus,
   input[type="tel"]:focus {
-    border-color: #7a8c8c; }
+    border-color: #808b88; }
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -1216,7 +1235,7 @@ input[type="checkbox"] {
   padding-left: 0; }
 
 .nav-item {
-  font-family: "Alegreya", serif;
+  font-family: "Droid Serif", serif;
   font-size: 1.353rem;
   letter-spacing: .2rem;
   padding-right: 2.2rem; }
@@ -1235,8 +1254,7 @@ input[type="checkbox"] {
   display: block; }
   .nav-item-link:hover,
   .nav-drop-link:hover {
-    background-color: #EFC94C;
-    color: #7a8c8c; }
+    text-shadow: 2px 2px 2px rgba(239, 201, 76, 0.5); }
 
 .nav-drop {
   max-height: 1px;
@@ -1265,7 +1283,7 @@ input[type="checkbox"] {
   box-sizing: border-box; }
 
 #contain-head {
-  border-bottom: 1px solid #7a8c8c; }
+  border-bottom: 1px dotted #808b88; }
 
 html {
   height: 100%;
@@ -1279,13 +1297,19 @@ body {
   padding: 0;
   margin: 0; }
 
+.article-body {
+  display: block;
+  margin: 2rem auto; }
+  .article-body.contact {
+    width: 40%; }
+
 img {
   max-width: 100%; }
   img.portfolio-image {
     border: 1px solid #1F232A; }
 
 footer {
-  border-top: 1px solid #7a8c8c; }
+  border-top: 1px dotted #808b88; }
   footer > .footer {
     margin: 2.2rem auto;
     font-size: 1.353rem; }
@@ -1295,11 +1319,10 @@ footer {
   padding: 0 20px; }
   .poem pre {
     overflow: visible;
-    font-family: "Alegreya", serif;
-    font-size: 1.595rem;
-    color: #627171;
-    line-height: 1.5;
-    letter-spacing: .2rem; }
+    font-family: "Droid Serif", serif;
+    font-size: 1.155rem;
+    color: #67716e;
+    line-height: 1.4; }
 
 .home-image {
   display: block;

@@ -1,5 +1,22 @@
 
 $(document).ready( function() {
+    var eAddy={
+        myName:'lizleg2',
+        at:'@sonic',
+        suffix:'.net'
+    };
+
+    var w = eAddy.myName,
+    q = eAddy.at,
+    z = eAddy.suffix,
+    zz = 'mailto:'+ w + q + z;
+    $('.sayHi').click(
+        function(w, q, z){
+            $(this).attr('href',zz);
+        });
+
+
+
 
     // Put some nice JavaScript in here.
     var $nav_main = $('#nav-main'),

@@ -110,8 +110,9 @@
     display: block;
 
     &:hover {
-        background-color: $color-accent-light;
-        color: $color-accent-med;
+        //background-color: $color-accent-light;
+        //color: $white;
+        text-shadow: 2px 2px 2px rgba(239, 201, 76, .5);
     }
 }
 

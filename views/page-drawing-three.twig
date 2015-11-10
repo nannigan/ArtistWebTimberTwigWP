@@ -4,9 +4,9 @@
         <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
             <section class="article-content">
                 <div class='row'>
-                  <div class="article-body">
+ <div class="article-body">
                         {# http://flickity.metafizzy.co/#getting-started  see page-gallery#}
-                        <h3>&ldquo;Fragments&rdquo;</h3>
+                        <h3>&ldquo;Certain Mythologies&rdquo;</h3>
                         {% for i in post.gallery_drawing %}
                             {% set img = TimberImage(i) %}
 
@@ -17,11 +17,12 @@
         <a href="{{img.link}}">
                                     <img class='portfolio-image' src="{{img.src('medium')}}" alt="{{img.title}}"></a>
 
+                           {#  <pre>{{dump(img.link)}}</pre> #}
                             <p class='caption'>{{img.caption}}</p>
                            </div>
 
                     {% endfor %}
-              </div>
+</div>
             </div>
         </section>
     </article>

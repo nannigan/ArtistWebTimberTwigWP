@@ -6,7 +6,12 @@
     {% for item in menu.get_items %}
         <li class="nav-item">
             {# <li class="nav-item {{item.classes | join(' ')}}"> #}
+        {% if (item.title == 'CV') %}
+            <a class="nav-item-link" href="{{item.link}}" target='_blank'>{{item.title}}</a>
+        {% elseif (item.title != 'CV') %}
             <a class="nav-item-link" href="{{item.link}}">{{item.title}}</a>
+        {% endif %}
+
             {% if item.get_children %}
                 <ul class="nav nav-drop">
                 {% for child in item.get_children %}

@@ -13,7 +13,7 @@
 // Or, you know, just use this:
 body {
 	font-family: $body-font;
-    font-size: 100%;
+    font-size: 16px;
     line-height:1;
     color: $black;
 
@@ -91,27 +91,28 @@ small {
 }
 // these for header don't need  own scss file
 .site-title-sub{
-    font-size: $size-h3;
+    font-size: $size-h4;
     color: $grey-med;
+    letter-spacing: .4rem;
 }
 
 a.site-title-link{
     color:$black;
 }
 
-.caption{
+.credit{
     color: $grey-med;
     font-family: $serif;
     font-style: italic;
-    font-size: $size-h4;
+    font-size: $size-h5;
+
+}
+
+.caption{
+   @extend .credit;
+    line-height: 1.2;
     text-transform: lowercase;
     letter-spacing: .1em;
 }
 
-.credit{
-     color: $grey-med;
-    font-family: $serif;
-    font-style: italic;
-    font-size: $size-h4;
 
-}

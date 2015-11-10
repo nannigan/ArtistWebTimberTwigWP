@@ -1,0 +1,150 @@
+{
+    "key": "group_56414f91d8a75",
+    "title": "Gallery with Poem (painting, mixed media)",
+    "fields": [
+        {
+            "key": "field_56414f91dcdd0",
+            "label": "Gallery with Poem",
+            "name": "gallery_with_poem",
+            "type": "gallery",
+            "instructions": "Gallery for pages with poem",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 3,
+            "max": 12,
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ".jpg , .jpeg, .png"
+        },
+        {
+            "key": "field_564150e11cc7d",
+            "label": "Gallery Poem Title",
+            "name": "gallery_poem_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Untitled",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_564150801cc7c",
+            "label": "Gallery Poem",
+            "name": "gallery_poem",
+            "type": "textarea",
+            "instructions": "Paste Poem here",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5641510b1cc7e",
+            "label": "Gallery Poem Attribution",
+            "name": "gallery_poem_attribution",
+            "type": "text",
+            "instructions": "Enter poem author's name here",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Anonymous",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5641514d1cc7f",
+            "label": "Gallery Poem Attribution Two",
+            "name": "gallery_poem_attribution_two",
+            "type": "text",
+            "instructions": "Enter name of Translator if appropriate.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "68"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "70"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "author",
+        "featured_image",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1447121643
+}

@@ -3,14 +3,15 @@
                     <h2 class="site-title" role="banner">
                         <a class="site-title-link" href="{{site.link}}" rel="home">{{site.name}}</a>
 
-                     {% if (post.title == 'Drawing') or (post.title == 'Painting') or (post.title == 'Mixed+Media') %}
+                     {% if (post.title == 'Drawing') or (post.title == 'Painting') or (post.title == 'Mixed Media')  or (post.title == 'Contact') %}
                           <span class='site-title-sub'>{{post.title|lower}}</span>
                         {% elseif ('drawing' in post.title)%}
                           <span class='site-title-sub'>{{ 'drawing'|lower }}</span>
-                        {% elseif ('painting' in post.title)%}
+                          {# below would be needed for subpage sections #}
+                        {% elseif ('Painting' in post.title)%}
                           <span class='site-title-sub'>{{ 'painting'|lower }}</span>
-                        {% elseif ('mixed' in post.title)%}
-                          <span class='site-title-sub'>{{ 'mixed+media'|lower }}</span>
+                        {% elseif ('Mixed' in post.title)%}
+                          <span class='site-title-sub'>{{ 'mixed media'|lower }}</span>
                     {% endif %}
                     </h2>
 

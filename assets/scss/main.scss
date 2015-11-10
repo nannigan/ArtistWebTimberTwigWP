@@ -36,7 +36,8 @@
 // 3. Import our actual styles.
 //    See the files for descriptions of their contents. You can add any other partials you see fit - for example, WordPress might have a _posts.scss partial.
 //--
-@import "partials/gallery";
+@import "partials/gallery-slider";
+@import "partials/gallery-flex";
 @import "partials/typography";
 @import "partials/buttons";
 @import "partials/forms";
