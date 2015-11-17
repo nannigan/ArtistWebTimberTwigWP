@@ -1,31 +1,9 @@
 {% extends "base.twig" %}
 {% block content %}
-    <div class="content-wrapper container">
-        <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
- <div class="article-body">
-                <div class='flex-gallery'>
-                    <div class='poem-box'>
-                        <div class='poem'>
-                            <h3>{{post.gallery_poem_title}}</h3>
-                            <pre>{{post.gallery_poem}}</pre>
-                            <p class='credit'>{{post.gallery_poem_attribution}}<br>{{ post.gallery_poem__attribution_two }}</p>
-                      </div>
-                  </div>
 
-                        {% for i in post.gallery_with_poem %}
-                            {% set img = TimberImage(i) %}
-                            {# <div class="col-md-3 col-xs-6"> #}
-                            <div class="image-box ">
-                               <h4>{{img.title}}</h4>
-                                 <a href="{{img.link}}">
-                                    <img class='portfolio-image' src="{{img.src('medium')}}" alt="{{img.title}}"></a>
-                           {#  <pre>{{dump(img.link)}}</pre> #}
-                            <p class='caption'>{{img.caption}}</p>
-                           </div>
-                        {% endfor %}
+{% include 'includes/poem-gallery.twig' %}
 
-                      </div>
-                       </div>
-    </article>
-    </div><!-- /content-wrapper -->
+
+
+
 {% endblock %}

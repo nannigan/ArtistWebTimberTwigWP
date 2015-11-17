@@ -1,0 +1,33 @@
+<div class="content-wrapper container">
+        <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+            <div class="article-body">
+                 <p class='caption'>[click on image to view enlarged]</p>
+                <div class='flex-gallery'>
+
+                    <div class='poem-box'>
+                        <div class='poem'>
+                            <h3>{{post.gallery_poem_title}}</h3>
+                        <pre>{{post.gallery_poem}}</pre>
+                        <p class='credit'>{{post.gallery_poem_attribution}}<br>{{ post.gallery_poem__attribution_two }}</p>
+                    </div>
+                </div>
+                {% for i in post.gallery_with_poem %}
+                    {% set img = TimberImage(i) %}
+                    {# <div class="col-md-3 col-xs-6"> #}
+                        <div class='img-flexbox'>
+
+                            {# might want conditional to set diff class on paintings all pretty similar proportions tall #}
+                            <div class="image-box ">
+                                <h5>{{img.title}}</h5>
+                                <a href="{{img.link}}">
+                                <img class='portfolio-image' src="{{img.src('medium')}}" alt="{{img.title}}"></a>
+
+                         <p class='caption'>{{ img.media_description }}<br>
+                    {{ img.dimensions }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</article>
+</div><!-- /content-wrapper -->

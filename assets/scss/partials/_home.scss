@@ -3,22 +3,7 @@
 // home page styles
 // ---
 
-.poem-title{
 
-}
-.poem{
-    display: block;
-    padding:0 20px;
-    & pre{
-    overflow: visible;
-    font-family: $serif;
-    font-size: $size-h5;
-    color: $grey-med;
-    line-height: 1.4;
-    //letter-spacing: .2rem;
-    }
-
-}
 
 .home-image{
     display: block;
@@ -27,3 +12,10 @@
 }
 
 
+// .h-right{
+//     border: 2px solid #d14d98;
+// }
+
+// .h-left{
+//     border: 2px solid #d14d98;
+// }

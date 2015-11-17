@@ -50,6 +50,7 @@ html {
 body {
     min-height: 100%;
     background: $white;
+    //background: #757f7d;;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -60,12 +61,9 @@ body {
     &.contact{
     width: 40%;
     }
-    margin: 2rem auto;
+   // margin: 2rem auto;
 }
-// using bootstrap layout.contain {
-// 	max-width: $screen-md; // I'm using a pretty narrow container, you might want this to be $screen-lg depending on your layout.
-// 	margin: 0 auto;
-// }
+
 
 
 
@@ -76,6 +74,10 @@ img {
     max-width: 100%;
     &.portfolio-image{
     border: 1px solid $black;
+     & .foo{
+         border: 3px solid #d14caa;
+     }
+
    }
 }
 

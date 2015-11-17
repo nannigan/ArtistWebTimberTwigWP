@@ -1,0 +1,9 @@
+                    {% for i in post.gallery_drawing %}
+                            {% set img = TimberImage(i) %}
+                            <div class="col-md-3 col-xs-6">
+                               <h4>{{img.title}}</h4>
+                                 <a href="{{img.link}}">
+                                    <img class='portfolio-image' src="{{img.src('medium')}}" alt="{{img.title}}"></a>
+                            <p class='caption'>{{img.caption}}</p>
+                           </div>
+                    {% endfor %}

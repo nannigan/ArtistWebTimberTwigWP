@@ -35,7 +35,8 @@ class StarterSite extends TimberSite {
 		$context['foo'] = 'bar';
 		$context['stuff'] = 'I am a value set in your functions.php file';
 		$context['notes'] = 'These values are available everytime you call Timber::get_context();';
-		$context['menu'] = new TimberMenu();
+		$context['menu'] = new TimberMenu('menu');
+        $context['footermenu'] = new TimberMenu('footermenu');
 		$context['site'] = $this;
 		return $context;
 	}
@@ -68,9 +69,9 @@ function my_scripts() {
 
 	}
 	// Enqueue stylesheet and JS file with a jQuery dependency.
-	wp_enqueue_style( 'my-styles', get_template_directory_uri() . '/assets/css/main.css', 1.0);
+	wp_enqueue_style( 'my-styles', get_template_directory_uri() . '/assets/dist/css/main.css', 1.0);
 
-	wp_enqueue_script( 'my-js', get_template_directory_uri() . '/assets/js/dist/main.js', array('jquery'), '1.0.0', true );
+	wp_enqueue_script( 'my-js', get_template_directory_uri() . '/assets/dist/js/main.js', array('jquery'), '1.0.0', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'my_scripts' );

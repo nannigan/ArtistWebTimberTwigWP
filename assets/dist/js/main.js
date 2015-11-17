@@ -1,33 +1,18 @@
+$("document").ready(function(){
 
-$(document).ready( function() {
-    var eAddy={
-        myName:'lizleg2',
-        at:'@sonic',
-        suffix:'.net'
-    };
-
-    var w = eAddy.myName,
-    q = eAddy.at,
-    z = eAddy.suffix,
-    zz = 'mailto:'+ w + q + z;
-    $('.sayHi').click(
-        function(w, q, z){
-            $(this).attr('href',zz);
-        });
+        var myName = 'nannigan',
+                        at = '@nannigans',
+                        suffix = '.com';
 
 
-
-
-    // Put some nice JavaScript in here.
-    var $nav_main = $('#nav-main'),
-        $nav_link = $('#nav-open-link');
-
-    $nav_link.click( function() {
-        console.log('clicked!');
-        $nav_main.toggleClass('active');
-        $nav_link.toggleClass('active');
-        return false;
-    });
+                    var w = myName,
+                        q = at,
+                        z = suffix,
+                        zz = 'mailto:'+ w + q + z;
+                $('.sayHi').on('click',
+                            function(w, q, z){
+                                $(this).attr('href',zz);
+                            });
 });
 
 

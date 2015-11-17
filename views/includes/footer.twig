@@ -1,1 +1,14 @@
-Copyright &copy; Liz Leger {{"now"|date('Y')}} &nbsp; &nbsp; All photography by Pete Macchia unless otherwise noted.
+
+
+<nav  class="nav-foot" >
+    <ul class="nav-items">
+
+    {% for item in footermenu.get_items %}
+        <li class="nav-item">
+            <a class="nav-item-link" href="{{item.link}}">{{item.title}}</a>
+        </li>
+    {% endfor %}
+     <li class="nav-item"><span class='caption'>Copyright &copy; Liz Leger {{"now"|date('Y')}} &nbsp; &nbsp; All photography by Pete Macchia unless otherwise noted.</span></li>
+    </ul>
+
+</nav>

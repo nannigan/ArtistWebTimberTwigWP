@@ -4,13 +4,17 @@
 	<div class="content-wrapper">
 		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
 			<section class="article-content">
+{# <pre>{{dump(post.title)}}</pre> (title of the piece) #}
 
+           {#  {% if 'Mixed' in post.title %}
+                <img class="portfolio-image foo" src="{{post.guid | resize(600)}}">
 
+            {% endif %} #}
+             <img class="portfolio-image" src="{{post.guid}}">
 
-
-                <img class="portfolio-image" src="{{post.guid}}">
-
-                 <h3>{{ post.title }}  </h3><p class='caption'>{{ post.dimensions }}<br><br>{{ post.photo_attribution }}</p>
+                 <h3>{{ post.title }}  </h3>
+                 <p class='caption'>{{ post.media_description }}<br>
+                    {{ post.dimensions }}</p>
 
 
 

@@ -12,8 +12,9 @@
 // 1. Import vendor (third party code).
 // 	  We do this first because we may override some of these and they are not dependent on our code
 //--
-
-// @import "vendor/bootstrap/bootstrap";
+// BS 4 alpha minified css
+// @import "bootstrap.min"
+@import "vendor/grid";
 
 
 
@@ -21,11 +22,11 @@
 // 2. Import our variables and mixins.
 //    Other than the helpers file, this code doesn't actually compile to anything - just utilities to be used throughout the partials.
 //--
-@import "utility/grid";
+//  old BS grid from lara @import "utility/grid";
 @import "utility/variables";
 
 /// made changes using variable colors
-@import "vendor/flickity";
+//@import "vendor/flickity";
 
 @import "utility/mixins";
 @import "utility/helpers";

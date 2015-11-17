@@ -307,7 +307,13 @@ hr {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1220px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1370px;
   }
 }
 .container-fluid {
